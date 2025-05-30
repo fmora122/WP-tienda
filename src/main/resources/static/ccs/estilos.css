@@ -7,7 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : admin
 */
 
-/*Selectr de IDs*/
+/*Selector de IDs*/
 #encabezado{
     top: 0;
     left: 0;
@@ -17,6 +17,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     text-align: center;
     background-color: cadetblue;
 }
+
 #menu {
     top: 10%;
     left: 0;
@@ -26,6 +27,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     text-align: right;
     background-color: coral;
 }
+
 #barraLateral {
     top: 15%;
     left: 0;
@@ -34,6 +36,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     position: fixed;
     background-color: darkgreen;
 }
+
 #contenido {
     top: 15%;
     left: 20%;
@@ -42,6 +45,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     position: fixed;
     background-color: dimgray;
 }
+
 #piePagina{
     bottom: 0%;
     left: 0%;
@@ -49,4 +53,75 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     width: 100%;
     position: fixed;
     background-color: cyan;
+}
+
+/*Selector de Classes*/
+
+.parrafoBlanco {
+    color: white;
+}
+
+.parrafoCentrado {
+    text-align: center;
+}
+
+.parrafoRojo {
+    color: red;
+}
+
+/*Selector de Elementos?*/
+
+/* Para todos los elementos del mismo tipo */
+
+/*p {
+    font-size: 20px;
+}*/
+
+
+/* Para aplicar el mismo estilo a diferentes elementos */
+
+/*p, h1, h2 {
+    font-size: 50px;
+}*/
+
+
+/* Contatenando elementos, aqui seria un div que contenga un p*/
+
+div p {
+    font-size: 20px;
+}
+
+
+/* Contatenando elementos Y clases, aqui seria un div con clase X que contenga un p*/
+
+div.parrafoBlanco p {
+    font-size: 8px;
+}
+
+
+/* Selector universal*/
+
+/** {
+    font-size: 35px;
+}*/
+
+body {
+    background-color: red;
+}
+
+/* Selector de Anclas */
+
+a:visited {
+    font-size: 60px;
+}
+
+a:hover {
+    background-color: green;
+    color: white;
+    transition: 0.5s; 
+}
+
+a:active {
+    background-color: purple;
+    color: white;
 }

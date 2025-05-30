@@ -9,12 +9,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="ccs/estilos.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .parrafoVioleta {
+                color: violet;
+            }
+        </style>
     </head>
     <body>
         <header id="encabezado">Pagina de Ejemplo de Semantica</header>
         <nav id="menu">
-            <a href="index.html">Home</a> | 
-            <a href="ejemplo8.html">Anterior</a>
+            <a style="margin-right: 20px;" href="index.html">Home</a> | 
+            <a style="margin-right: 20px;" href="ejemplo8.html">Anterior</a>
         </nav>
         <aside id="barraLateral">
             <h2>Informacion de la Pagina</h2>
@@ -23,10 +28,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <section id="contenido">
             <h2>Contenido Principal</h2>
             <br/>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
+
+            <!-- El orden de las clases en el archivo html no impacta el resultado, pero el orden de las clases en el  
+            archivo CSS si impacta, este se lee top-down. Ademas si la clase de estilo es local (dentro del mismo archivo)
+            entonces la local toma precedencia y el ultimo nivel de precedencia es el estilo en linea-->
+
+            <p class="parrafoBlanco parrafoCentrado parrafoRojo parrafoVioleta"
+               style="color: gold;">Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
+            <p class="parrafoBlanco parrafoCentrado">Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
+            <p class="parrafoBlanco">Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
+            <div class="parrafoBlanco">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
+            </div>
+            
+            <!-- Margin/Border/Padding/Content, en cada uno se puede definir top/bottom/left/right 
+            **padding-left: 20px = solo a la izquierda, puede ser t/b/l/r
+            **padding: 50px 30x = el primer valor corresponde a top/bottom y el segunda a left/right
+            **padding: 50px 30x 20px = 1er es top, 2do es left/right y el 3ero bottom
+            **padding: 50px 30x 20px 10px = 1ero es top, 2do right, 3ero bottom y 4to left (clockwise alignment!)-->
+             
+            <div style="border: solid 2px; padding-left: 50px">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit libero curabitur nisi suscipit, sed vestibulum ac aenean aliquam parturient egestas mauris etiam euismod. Porttitor vestibulum eleifend augue eros urna praesent himenaeos class arcu quisque, habitasse lectus montes nisl inceptos senectus integer tincidunt fringilla aliquet dignissim, morbi nibh tortor dictumst nec sed netus pulvinar taciti. Penatibus auctor neque congue ut cras potenti nullam, mus ornare natoque nostra arcu odio semper, pharetra ad senectus gravida integer accumsan nec, pellentesque netus nulla duis condimentum morbi.</p>
         </section>
         <footer id="piePagina">Costa Rica 2025</footer>
