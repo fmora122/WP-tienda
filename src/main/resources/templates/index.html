@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{layout/plantilla :: head}"> <!-- agregar la ruta del archivo html, no usar ".html", luego DEJAR UN ESPACIO, :: y luego OTRO ESPACIO antes de indicar el nombre del frangento que se quiere utilizar -->
+    </head>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"></header>
+
+        <!-- 
+        los parentesis cuadrados le indica a thymeleaf que el contenido es codigo que necesita ser
+        interpretado y "${}" es para acceder a un atributo del model
+        
+        <span style="color: purple">[[${NombreProfesor}]]</span>
+        -->
+        <<footer th:replace="~{layout/plantilla :: footer}"></footer>
+        
+    </body>
+</html>
