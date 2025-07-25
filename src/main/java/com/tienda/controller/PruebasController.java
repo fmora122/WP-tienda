@@ -96,5 +96,24 @@ public class PruebasController {
         model.addAttribute("precioSup", precioSup);
         return "/pruebas/listado2";
     }
+    
+    //Tarea
+    @GetMapping("/listado3")
+    public String listado3(Model model) {
+        var productos = productoService.getProductos(false);
+        model.addAttribute("productos", productos);
+        return "/pruebas/listado3";
+    }
+    
+    //Tarea
+    @PostMapping("/QueryTarea")
+    public String consultaQueryTarea(
+            @RequestParam(value = "num") int num,
+            Model model) {
+        var productos = productoService.findByExistenciasGreaterThanEqual(num);
+        model.addAttribute("productos", productos);
+        model.addAttribute("num", num);
+        return "/pruebas/listado3";
+    }
 
 }
