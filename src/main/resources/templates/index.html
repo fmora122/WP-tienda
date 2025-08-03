@@ -9,7 +9,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>
         <header th:replace="~{layout/plantilla :: header}"></header>
-
+        
+        <section th:replace="~{carrito/fragmentos :: listadoProductos}"/>
+        
         <!-- 
         los parentesis cuadrados le indica a thymeleaf que el contenido es codigo que necesita ser
         interpretado y "${}" es para acceder a un atributo del model
